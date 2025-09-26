@@ -1,0 +1,12 @@
+1. Applying aggregate functions on numeric columns:
+
+SELECT SUM(salary) AS total_salary, AVG(salary) AS avg_salary, COUNT(*) AS employee_count FROM employees;
+
+2. Using GROUP BY to categorize data:
+
+SELECT department, AVG(salary) AS avg_salary FROM employees GROUP BY department;
+
+
+3. Filtering groups using HAVING:
+
+SELECT department, AVG(salary) AS avg_salary FROM employees GROUP BY department HAVING AVG(salary) > 50000;
